@@ -7,6 +7,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { Test1Module } from './test1/test1.module';
 import { Test3221Component } from './test1/test3221/test3221.component';
 import { UserService } from './service/user.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider'
 
 @NgModule({
   declarations: [
@@ -16,6 +22,12 @@ import { UserService } from './service/user.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [
     UserService,
