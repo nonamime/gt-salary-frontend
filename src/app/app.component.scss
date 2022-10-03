@@ -1,0 +1,26 @@
+mat-toolbar {
+    background: #0a6160;
+    color: white;
+    border-bottom: 5px solid #e4ad53;
+    min-height: 60px;
+}
+
+mat-sidenav {
+    width: 200px;
+}
+
+.content {
+    height: calc(100vh - 98px);
+
+}
+
+mat-drawer-container {
+    height: calc(100vh - 65px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    color: lightgray;
+}
