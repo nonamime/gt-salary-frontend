@@ -1,8 +1,13 @@
 <mat-toolbar>
-  <button mat-icon-button (click)="drawerOpened = !drawerOpened"><mat-icon>menu</mat-icon></button>
+  <button *ngIf="isMobleAndTablet$ | async" mat-icon-button (click)="drawerOpened = !drawerOpened">
+    <mat-icon>menu</mat-icon>
+  </button>
+  Employee Manage System
 </mat-toolbar>
 
-<mat-drawer-container class="example-container">
-  <mat-sidenav [opened]="drawerOpened">End</mat-sidenav>
-  <section>Main</section>
-</mat-drawer-container>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" (backdropClick)="drawerOpened = !drawerOpened"  [opened]="drawerOpened">
+    End
+  </mat-sidenav>
+  <mat-sidenav-content>Main</mat-sidenav-content>
+</mat-sidenav-container>
