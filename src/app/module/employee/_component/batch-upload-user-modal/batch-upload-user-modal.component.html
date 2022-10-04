@@ -1,0 +1,28 @@
+<mat-card class="upload-user-csv-card col-11 mx-auto">
+    <mat-card-title class="my-2 mx-2">Batch upload user csv file</mat-card-title>
+    <mat-card-content>
+        <div class="mx-auto" style="width: 650px;">
+            <mat-form-field>
+                <div>
+                    <mat-toolbar>
+                        <!-- Display files names -->
+                        <input matInput [(ngModel)]="fileAttr" readonly name="name" />
+                        <!-- Browse Button -->
+                        <button mat-flat-button class="theme-button">Browse File</button>
+                    </mat-toolbar>
+                    <!-- Fetch selected filed on change -->
+                    <input type="file" #fileInput id="uploadFile" name="uploadFile"
+                        multiple="multiple" accept="text/csv" />
+                </div>
+            </mat-form-field>
+
+            <mat-list>
+                <mat-list-item>Item 1</mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>Item 2</mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>Item 3</mat-list-item>
+            </mat-list>
+        </div>
+    </mat-card-content>
+</mat-card>

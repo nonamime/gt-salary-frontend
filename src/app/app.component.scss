@@ -1,3 +1,5 @@
+@import "../variable.scss";
+
 mat-toolbar {
     background: #0a6160;
     color: white;
@@ -7,15 +9,16 @@ mat-toolbar {
 
 mat-sidenav {
     width: 200px;
+    background-color: #f0fffd;
 }
 
 .content {
     height: calc(100vh - 98px);
-
 }
 
 mat-sidenav-container {
     height: calc(100vh - 65px);
     font-size: 2rem;
-    color: lightgray;
+    background-color: $theme-bg-color;
+    color: #0a6160;
 }

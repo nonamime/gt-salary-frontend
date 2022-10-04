@@ -1,2 +1,96 @@
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "./variable.scss";
+
+body {
+    height: 100%;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 600 !important;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-card {
+    background: #f0fffd !important;
+    color: $theme-color;
+}
+
+theme-bg-color {
+    color: $theme-bg-color;
+}
+
+table {
+    background: #f0fffd !important;
+
+    .mat-header-cell {
+        color: $theme-color;
+    }
+
+    .mat-header-cell,
+    .mat-cell {
+        color: $theme-color;
+    }
+}
+
+mat-dialog-container {
+    background: #e8f6f4 !important;
+}
+
+mat-form-field {}
+
+.mat-input-element {
+    color: #484a4c;
+    color: $theme-color;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: $theme-color;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+    color: $theme-color;
+}
+
+.mat-form-field .mat-form-field-label {
+    color: $theme-color;
+}
+
+.mat-focused .mat-form-field-underline .mat-form-field-ripple {
+    background-color: $theme-color;
+}
+
+.mat-form-field-empty.mat-form-field-label {
+    color: green;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-input {
+    width: 300px;
+}
+
+.mat-card-actions {
+    display: flex !important;
+    justify-content: flex-end
+}
+
+.theme-button {
+    width: 100%;
+    background: $theme-color;
+}
+
+button {
+    &.small {
+        width: 30px;
+    }
+
+    &.medium {
+        width: 100px;
+    }
+}

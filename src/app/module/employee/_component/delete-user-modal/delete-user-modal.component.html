@@ -1,0 +1,12 @@
+<mat-card class="delete-user-card col-11 mx-auto">
+    <mat-card-title>Delete User</mat-card-title>
+    <mat-card-content>Are you sure to delete user : {{ user.name }} with login: {{ user.login}}</mat-card-content>
+    <mat-card-actions flex>
+        <button mat-raised-button class="theme-button medium mx-1" (click)="submit()">
+            Delete
+        </button>
+        <button mat-raised-button class="medium mx-1" (click)="cancel()">
+            Cancel
+        </button>
+    </mat-card-actions>
+</mat-card>

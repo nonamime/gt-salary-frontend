@@ -1,0 +1,39 @@
+<mat-card class="edit-user-card col-11">
+    <mat-card-title>
+        <h1>New User</h1>
+    </mat-card-title>
+    <mat-card-content>
+        <div [formGroup]="form" class="form-group">
+
+            <mat-form-field appearance="outline" class="form-input mx-auto" dis>
+                <mat-label>ID</mat-label>
+                <input formControlName="id" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="form-input">
+                <mat-label>Login</mat-label>
+                <input formControlName="login" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="form-input">
+                <mat-label>Name</mat-label>
+                <input formControlName="name" matInput>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="form-input">
+                <mat-label>Salary</mat-label>
+                <input formControlName="salary" matInput>
+            </mat-form-field>
+
+            {{ errorMessages }}
+        </div>
+    </mat-card-content>
+    <mat-card-actions flex>
+        <button mat-raised-button class="theme-button medium mx-1" (click)="submit()">
+            Submit
+        </button>
+        <button mat-raised-button class="medium mx-1" (click)="cancel()">
+            Cancel
+        </button>
+    </mat-card-actions>
+</mat-card>

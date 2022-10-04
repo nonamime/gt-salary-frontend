@@ -5,9 +5,11 @@
   Employee Manage System
 </mat-toolbar>
 
-<mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" (backdropClick)="drawerOpened = !drawerOpened"  [opened]="drawerOpened">
-    End
+<mat-sidenav-container>
+  <mat-sidenav mode="side" (backdropClick)="drawerOpened = !drawerOpened" [opened]="drawerOpened">
+    Employee
   </mat-sidenav>
-  <mat-sidenav-content>Main</mat-sidenav-content>
+  <mat-sidenav-content>
+    <employee-index-page></employee-index-page>
+  </mat-sidenav-content>
 </mat-sidenav-container>

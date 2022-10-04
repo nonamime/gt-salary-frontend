@@ -11,10 +11,13 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider'
+import { MatDialogModule } from '@angular/material/dialog';
+import { EmployeeModule } from '@module/employee/employee.module';
+import { IndexPageComponent } from '@module/employee/index-page/index-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -25,13 +28,16 @@ import { MatDividerModule } from '@angular/material/divider'
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule,
+    EmployeeModule
   ],
   providers: [
     UserService,
   ],
   bootstrap: [
-    AppComponent,
+    AppComponent, 
+    IndexPageComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
